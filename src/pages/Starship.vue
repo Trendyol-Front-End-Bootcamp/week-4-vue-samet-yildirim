@@ -2,6 +2,8 @@
   <div>
     <Loading v-if="loading"/>
     <div v-else>
+      <Header/>
+
       <div>
         <h1>
           {{ starship.name }}
@@ -23,9 +25,10 @@
 import axios from "axios";
 import BackToHome from '../components/BackToHome/BackToHome.vue'
 import Loading from '../components/Loading/Loading.vue'
+import Header from '../components/Header/Header.vue'
 export default {
   name: "Starship",
-  components:{BackToHome,Loading},
+  components:{BackToHome,Loading,Header},
   data() {
     return {
       loading: true,

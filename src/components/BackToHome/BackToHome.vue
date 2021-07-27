@@ -12,7 +12,7 @@ export default {
 .backToHome{
     position:absolute;
     left:25px;
-    top:25px;
+    top:145px;
     background:black;
     border-radius:50%;
     color:white;
